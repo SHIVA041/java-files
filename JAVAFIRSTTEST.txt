@@ -1,0 +1,119 @@
+1>how to create constants in java
+      ordinary variable into constants we have to use keyword final.
+2>how many types of datatype in java
+  there are 2 types of datatypes in java
+  premutive and non premutive
+  premutive byte,short,long,boolean,char,float,double,int.
+  non premutive String
+ 3>Because in java every datatype is strictly defined
+ 4>*can be a alfabet
+   *can be a number 
+   *can be _and $ symbol
+   *can't start with number   
+ 5>Declaring a variable with datatypes
+ 6>Array is a group of similar or homogenious type of datatype in the single unit.
+ 7>no array follows index so it start from 0th location
+ 8>array stored in stack memory
+ 9>we can store multiple number of values in single unit.
+10>An array without any name is known as anonymous array
+  exampkle==int Array[] = new int[2];
+                Array[0] = 1254;  
+				  Array[1] = 1151;  
+				   Array[2] = 1515;
+11>write a program to print an array.
+  class Tranee1{
+		public static void main(String a[]){
+        String [] names = {"girish","shivu","pavan","manish","manohar","pooja","shwetha","sachitra","geetha","anusha","megha"};
+		
+		System.out.println(names[0]);
+		System.out.println(names[1]);
+		System.out.println(names[2]);
+		System.out.println(names[3]);
+		System.out.println(names[4]);
+		System.out.println(names[5]);
+		System.out.println(names[6]);
+		System.out.println(names[7]);
+		System.out.println(names[8]);
+		System.out.println(names[9]);
+		System.out.println(names[10]);
+		
+		}
+}		   
+12>write a program to sort an array in java
+  public class Sort {    
+    public static void main(String[] args) {        
+             
+        int [] arr = new int [] {5, 2, 8, 7, 1};     
+        int temp = 0;    
+              System.out.println("Elements of original array: ");    
+        for (int i = 0; i < arr.length; i++) {     
+            System.out.print(arr[i] + " ");    
+        }    
+            //Sort the array in ascending order    
+        for (int i = 0; i < arr.length; i++) {     
+            for (int j = i+1; j < arr.length; j++) {     
+               if(arr[i] > arr[j]) {    
+                   temp = arr[i];    
+                   arr[i] = arr[j];    
+                   arr[j] = temp;    
+               }     
+            }     
+        }    
+		System.out.println();
+		
+		    //Displaying elements of array after sorting    
+        System.out.println("Elements of array sorted in ascending order: ");    
+        for (int i = 0; i < arr.length; i++) {     
+            System.out.print(arr[i] + " ");    
+        }    
+    }    
+}    
+13>
+14>write a program to throw arrayoutofboundexception
+15>what happen if u dont initialize an array
+    it will initialize its own array of 0th location and give default values
+16>find the smallest and largest number in a given array
+  class FindLargestSmallestNumberMain {
+ 
+           public static void main(String[] args) {
+ 
+ 
+ int arr[] = new int[]{12,56,76,89,100,343,21,234};
+ int smallest = arr[0];
+ int largest = arr[0];
+ 
+ for(int i=1; i< arr.length; i++)
+ {
+ if(arr[i] > largest)
+ largest = arr[i];
+ else if (arr[i] < smallest)
+ smallest = arr[i];
+ 
+ }
+ System.out.println("Smallest Number is : " + smallest);
+ System.out.println("Largest Number is : " + largest); 
+ }
+}
+ 
+17>static is a keyword in java which is used to make any mehod,variable and class staic
+   the variable which is declared by the word static inside the class and outside the mehod.
+   the mehod which is declared by the keyword static is known as static mehod
+18>we can overload the static mehods which have same name and different in parameters or method singnature.
+   we can't override the static mehod
+19>because compiler can call main mehod without creating an object it saves the memory
+20>block which co ntains static keyword
+21>no constuctors can not be static static used for class more than a object
+22>yes interface has static methods also.
+23>process of calling sequence of constuctors in class is known as constuctor chaining 
+   by using this(); and super();
+24>constuctor is blocks of codes similar to method which is only called when used instace or non static class created
+25>it show error because constuctor dont have any return type
+26>no we can not calls sub class constuctor in super class
+27>
+28>
+29>
+30> 
+
+
+          			   
+				   
